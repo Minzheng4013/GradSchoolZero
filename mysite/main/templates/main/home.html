@@ -1,7 +1,44 @@
 {% extends 'main/base.html' %}
-
 {% block content %}
-<p> 
-  Welcome
-</p>
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome!</h1>
+  <p class="lead">
+
+  GradSchoolZero is a student management system which allows users to stay connected and 
+  support students for graduation. GradSchoolZero provide capabilities for registering 
+  students, applying to be a student or an instructor of the school! 
+
+  </p>
+  <hr class="my-4">
+  <h4>Graduate Degrees that we offer:</h4>
+  <ul>
+    <li>Computer Science</li>
+  </ul>
+  <hr class="my-4">
+  <h4>Complete List of Courses:</h4>
+  <ul>
+    {% for i in c %}
+      <li>{{i.name}}</li>
+    {% endfor %}
+  </ul>
+  <hr class="my-4">
+  <h4>Top Rated Classes: </h4>
+  <ul>
+    {% for i in tc %}
+      <li>{{i.name}}  (rate: {{i.rate}})</li>
+    {% endfor %}
+  </ul>
+  <hr class="my-4">
+  <h4>Top Students: </h4>
+  <ul>
+    {% for i in ts %}
+      <li>{{i.first_name}} {{i.last_name}}  (gpa: {{i.GPA}})</li>
+    {% endfor %}
+  </ul>
+  <hr class="my-4">
+
+</div>
+
+
 {% endblock %}
