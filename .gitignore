@@ -1,15 +1,15 @@
 
-*.pyc
-**/*..sqlite3git
-**/*.pyc
+# *.pyc
+# **/*..sqlite3git
+# **/*.pyc
 
-*.log
-*.pot
-*.pyc
-migrations/
-__pycache__/
-*/*/*/__pycache__/
-*/*/__pycache__/
-*/__pycache__/
+# *.log
+# *.pot
+# *.pyc
+# migrations/
+# __pycache__/
+# */*/*/__pycache__/
+# */*/__pycache__/
+# */__pycache__/
 
-media
+# media
